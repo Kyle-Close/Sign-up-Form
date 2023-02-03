@@ -78,7 +78,7 @@ form{
 .lighter-section{
     display: grid;
 		grid-template-columns: 1fr 1fr;
-		padding: 50px 100px;
+		padding: 50px 500px 50px 100px;
 		gap: 20px 50px;
 }
 
@@ -106,6 +106,20 @@ form{
 .box{
 	display: flex;
 	flex-direction: column;
+}
+
+.box > label{
+	font-size: 1.2rem;
+}
+
+.box > input{
+	height: 1.8rem;
+	width: 25rem;
+	border-radius: 5px;
+	border-style:none;
+	border: 1px darkgray solid;
+	font-size: 1rem;
+	font-weight: bold;
 }
 
 .bottom{
