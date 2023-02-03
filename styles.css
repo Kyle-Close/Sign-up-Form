@@ -1,0 +1,168 @@
+@font-face {
+    font-family: Kanit;
+    src: url(./fonts/Kanit-Regular.ttf);
+}
+
+@font-face {
+    font-family: Norse;
+    src: url(./fonts/Norse.otf);
+}
+
+/* ------- Large Container Sections ------- */
+
+body{
+    font-family: 'Norse';
+    font-size: 64px;
+    margin: 0;
+    background-color: lightgray;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    min-width: 500px;
+    min-height: 500px;
+}
+
+/* ------- Header / Footer Section ------- */
+
+.header, .footer{
+    height: 200px;
+    background-color: black;
+}
+
+/* ------- Main Section ------- */
+
+.main{
+    display: flex;
+    flex: 1;
+
+}
+
+/* ---- Form Subsection  ---- */
+
+.form-section{  
+    flex-basis: 65%;
+    font-family: Kanit;
+    display: flex;
+    flex-direction: column;
+}
+
+.caption{
+    flex-basis: 35%;
+    background-color: rgb(179 177 177 / 50%);
+    font-size: 35px;
+    padding: 0 300px 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.caption p{
+    margin: 0;
+}
+
+.form{
+    flex-basis: 65%;
+		font-size: 1.5rem;
+		display: flex;
+		flex-direction: column;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+}
+
+.lighter-section{
+    display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: 50px 100px;
+		gap: 20px 50px;
+}
+
+.lighter-section > h3{
+	grid-column-start: 1;
+	grid-column-end: 3;
+	margin: 0;
+}
+
+.submit-section{
+	padding: 50px 100px 10px 100px;
+	background-color: rgb(179 177 177 / 50%);;
+}
+
+.submit-section > button{
+	width: 200px;
+	height: 50px;
+	background-color: rgb(89,109,72);
+	border-radius: 10px;
+	color: white;
+	font-size: 16px;
+	font-weight: bolder;
+}
+
+.box{
+	display: flex;
+	flex-direction: column;
+}
+
+.bottom{
+	background-color: rgb(179 177 177 / 50%);
+	flex: 1;
+	padding: 0 100px;
+}
+
+
+
+/* ---- Background Subsection  ---- */
+.background-section{
+    min-height: 856px;
+    background-repeat: no-repeat;
+    background-image: url(../img/background.jpg);
+    background-size: 100%;
+    flex-basis: 35%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-section{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, .5);
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+    padding: 20px;
+}
+
+.banner h1{
+    margin: 0;
+}
+
+.credit-section{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.credit-section p{
+    color: white;
+    font-family: 'Kanit';
+    font-size: 20px;
+    text-align: center;
+}
+
+
