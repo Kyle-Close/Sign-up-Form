@@ -78,8 +78,9 @@ form{
 .lighter-section{
     display: grid;
 		grid-template-columns: 1fr 1fr;
-		padding: 50px 500px 50px 100px;
+		padding: 50px 500px 75px 100px;
 		gap: 20px 50px;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
 .lighter-section > h3{
@@ -122,6 +123,24 @@ form{
 	font-weight: bold;
 }
 
+.box-5{
+    position: relative;
+}
+
+.no-match-text{
+    font-size: 16px;
+    color: red;
+    display: none;
+}
+
+.inputs:invalid{
+    border-color: red;
+}
+
+.inputs:valid{
+    border-color: green;
+}
+
 .bottom{
 	background-color: rgb(179 177 177 / 50%);
 	flex: 1;
@@ -132,10 +151,12 @@ form{
 
 /* ---- Background Subsection  ---- */
 .background-section{
-    min-height: 856px;
+    height: 1200px;
+    width: 600px;
     background-repeat: no-repeat;
     background-image: url(../img/background.jpg);
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
     flex-basis: 35%;
     flex-grow: 1;
     display: flex;
