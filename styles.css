@@ -154,7 +154,7 @@ form{
     height: 1200px;
     width: 600px;
     background-repeat: no-repeat;
-    background-image: url(../img/background.jpg);
+    background-image: url(./img/background.jpg);
     background-size: cover;
     background-position: center;
     flex-basis: 35%;
